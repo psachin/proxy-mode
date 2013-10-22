@@ -1,18 +1,24 @@
 * proxy-mode
-  Provides proxy minor mode for Emacs.
+
+  Provides proxy mode for Emacs.
 
 ** Clone
+
      - Clone this repository
+
        #+BEGIN_SRC sh
          git clone https://github.com/psachin/proxy-mode.git
        #+END_SRC sh
 
 ** Install 
+
 *** [[http://marmalade-repo.org/packages/proxy-mode][Marmalade]], [[http://melpa.milkbox.net/#/proxy-mode][MELPA]]
+
        #+BEGIN_SRC emacs-lisp
          M-x package-install RET proxy-mode RET 
        #+END_SRC emacs-lisp
 *** Manual
+
      - Add directory containing =proxy-mode.el= file to
        =load-path= in your =~/.emacs= file. For example:
        #+BEGIN_SRC emacs-lisp
@@ -20,11 +26,13 @@
        #+END_SRC emacs-lisp
 
      - To load a package, add:
+
        #+BEGIN_SRC emacs-lisp
          (require 'proxy-mode)
        #+END_SRC emacs-lisp
        
      - To enable the mode globally, add:
+
       #+BEGIN_SRC emacs-lisp
         '(proxy-mode t)
       #+END_SRC emacs-lisp
@@ -32,17 +40,21 @@
      - Optionally, run =make= to byte-compile the file.
        
 ** Customize
+
    - Customize using:
+
      #+BEGIN_SRC emacs-lisp
        M-x customize-group RET proxy-mode RET
      #+END_SRC emacs-lisp
+
 *** Proxy Services
-      If nil, add you proxy host here.  Protocol field can be http,
-      https, ftp, socks etc. Host field can be proxy-hostname or an IP
-      address with PORT number seperated by colon(:).
+
+      If nil, add proxy host under this variable. /Protocol/ field can
+      be =http=, =https=, =ftp=, =socks= etc. /Host/ field can be
+      proxy-hostname or an IP address with PORT number separated by
+      colon( =:= ).
 
       For example:
-
       |----------+------------------------|
       | Protocol | Host                   |
       |----------+------------------------|
@@ -50,11 +62,9 @@
       |----------+------------------------|
 
 
-      For =no_proxy=, enter hostname or IP-address in a seperate
+      If /Protocol/ is =no_proxy=, enter hostname or IP-address in a /Host/
       field. 
-
       For example:
-      
       |----------+---------------|
       | Protocol | Host          |
       |----------+---------------|
@@ -69,6 +79,7 @@
       
 
 ** License
+
    - See [[https://github.com/psachin/proxy-mode/blob/master/COPYING][COPYING]]
 
 

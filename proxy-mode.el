@@ -44,8 +44,8 @@
 
 (defcustom proxy-services nil
   "*If nil, add you proxy host here.
-Protocol field can be http, https, ftp, socks etc. Host field can
-be proxy-hostname or an IP address with PORT number seperated by
+'Protocol' can be http, https, ftp, socks etc.
+Host can be a proxy-hostname or an IP address with PORT number separated by
 colon(:).
 
 For example:
@@ -53,18 +53,23 @@ For example:
 Protocol: http
 Host    : proxy.example.com:3128
 
-For no_proxy, write each hostname or IP-address in a seperate
-field. For example:
+For no_proxy, write each hostname or IP-address in a separate
+field.
+
+For example:
 
 Protocol: no_proxy
 Host    : *.example.com
 
 Protocol: no_proxy
-Host    : 127.0.0.1
-"
+Host    : 127.0.0.1"
   :type '(alist :key-type (string :tag "Protocol")
 		:value-type (string :tag "Host"))
   :group 'proxy)
+
+(defvar url-proxy-services nil
+  "An alist of schemes and proxy servers that gateway them.
+This is a default elisp variable.")
 
 (defun proxy-enable ()
   "Enable proxy."
@@ -76,7 +81,7 @@ Host    : 127.0.0.1
 
 ;;;###autoload
 (define-minor-mode proxy-mode
-  "Get your foos in the right place."
+  "Minor proxy-mode."
   :lighter " ρ"
   :global t
   :keymap (let ((proxy-mode-map (make-sparse-keymap)))
