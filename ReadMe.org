@@ -44,28 +44,29 @@
       For example:
 
       |----------+------------------------|
-      | Protocol | http                   |
+      | Protocol | Host                   |
       |----------+------------------------|
-      | Host     | proxy.example.com:3128 |
+      | http     | proxy.example.com:3128 |
       |----------+------------------------|
 
 
-      For no\_proxy, write each hostname or IP-address in a seperate
+      For =no_proxy=, enter hostname or IP-address in a seperate
       field. 
 
       For example:
       
       |----------+---------------|
-      | Protocol | no\_proxy     |
+      | Protocol | Host          |
       |----------+---------------|
-      | Host     | *.example.com |
+      | no_proxy | *.example.com |
       |----------+---------------|
 
       |----------+-----------|
-      | Protocol | no\_proxy |
+      | Protocol | Host      |
       |----------+-----------|
-      | Host     | 127.0.0.1 |
+      | no_proxy | 127.0.0.1 |
       |----------+-----------|
+      
 
 ** License
    - See [[https://github.com/psachin/proxy-mode/blob/master/COPYING][COPYING]]
