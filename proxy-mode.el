@@ -67,26 +67,20 @@ Host    : 127.0.0.1"
 		:value-type (string :tag "Host"))
   :group 'proxy)
 
-(defvar url-proxy-services nil
-  "An alist of schemes and proxy servers that gateway them.
-This is a default elisp variable.")
-
 (defun proxy-enable ()
   "Enable proxy."
-  (setq url-proxy-services proxy-services))
+  (setq-default url-proxy-services proxy-services))
 
 (defun proxy-disable ()
   "Disable proxy."
-  (setq url-proxy-services nil))
+  (setq-default url-proxy-services nil))
 
 ;;;###autoload
 (define-minor-mode proxy-mode
   "Minor proxy-mode."
-  :lighter " ρ"
+  :lighter nil ;; " ρ"
   :global t
-  :keymap (let ((proxy-mode-map (make-sparse-keymap)))
-	    (define-key proxy-mode-map (kbd "C-c p") 'proxy-enable)
-	    proxy-mode-map)
+  :group 'proxy
   (if (not proxy-mode)
       (proxy-disable)
     (proxy-enable)))
