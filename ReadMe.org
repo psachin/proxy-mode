@@ -69,14 +69,12 @@
       | Protocol | Host          |
       |----------+---------------|
       | no_proxy | *.example.com |
+      | no_proxy | 127.0.0.1     |
       |----------+---------------|
 
-      |----------+-----------|
-      | Protocol | Host      |
-      |----------+-----------|
-      | no_proxy | 127.0.0.1 |
-      |----------+-----------|
-      
+      #+CAPTION: Proxy Services
+      #+NAME:   proxy-services
+      [[https://github.com/psachin/proxy-mode/blob/master/images/proxy-services.png][Proxy Services]]
 
 ** License
 
