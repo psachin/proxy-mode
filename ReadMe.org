@@ -1,40 +1,35 @@
-* proxy-mode
+* no-proxy-mode
 
-  Provides proxy mode for Emacs.
+  Bypass default Emacs proxy settings.
 
 ** Clone
 
      - Clone this repository
 
        #+BEGIN_SRC sh
-         git clone https://github.com/psachin/proxy-mode.git
+         git clone https://github.com/psachin/no-proxy-mode.git
        #+END_SRC sh
 
 ** Install 
 
-*** [[http://marmalade-repo.org/packages/proxy-mode][Marmalade]], [[http://melpa.milkbox.net/#/proxy-mode][MELPA]]
-
-       #+BEGIN_SRC emacs-lisp
-         M-x package-install RET proxy-mode RET 
-       #+END_SRC emacs-lisp
 *** Manual
 
-     - Add directory containing =proxy-mode.el= file to
+     - Add directory containing =no-proxy-mode.el= file to
        =load-path= in your =~/.emacs= file. For example:
        #+BEGIN_SRC emacs-lisp
-         (add-to-list 'load-path "/path/to/proxy-mode/")
+         (add-to-list 'load-path "/path/to/no-proxy-mode/")
        #+END_SRC emacs-lisp
 
      - To load a package, add:
 
        #+BEGIN_SRC emacs-lisp
-         (require 'proxy-mode)
+         (require 'no-proxy-mode)
        #+END_SRC emacs-lisp
        
      - To enable the mode globally, add:
 
       #+BEGIN_SRC emacs-lisp
-        '(proxy-mode t)
+        '(no-proxy-mode t)
       #+END_SRC emacs-lisp
        
      - Optionally, run =make= to byte-compile the file.
@@ -44,7 +39,7 @@
    - Customize using:
 
      #+BEGIN_SRC emacs-lisp
-       M-x customize-group RET proxy-mode RET
+       M-x customize-group RET no-proxy-mode RET
      #+END_SRC emacs-lisp
 
 *** Proxy Services
@@ -64,6 +59,7 @@
 
       If /Protocol/ is =no_proxy=, enter hostname or IP-address in a /Host/
       field. 
+      
       For example:
       |----------+---------------|
       | Protocol | Host          |
@@ -72,12 +68,12 @@
       | no_proxy | 127.0.0.1     |
       |----------+---------------|
 
-      #+CAPTION: Proxy Services
-      #+NAME:   proxy-services
-      [[https://github.com/psachin/proxy-mode/blob/master/images/proxy-services.png][Proxy Services]]
+      #+CAPTION: No Proxy Services
+      #+NAME:   no-proxy-services
+      [[./images/no-proxy-services.png]]
 
 ** License
 
-   - See [[https://github.com/psachin/proxy-mode/blob/master/COPYING][COPYING]]
+   - See [[https://github.com/psachin/no-proxy-mode/blob/master/COPYING][COPYING]]
 
 

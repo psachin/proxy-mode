@@ -1,6 +1,6 @@
-# Makefile for proxy-mode
+# Makefile for no-proxy-mode
 EMACS = emacs
-FILE = $(wildcard proxy-mode.el)
+FILE = $(wildcard no-proxy-mode.el)
 
 .PHONY: all clean
 
