@@ -11,7 +11,7 @@
 
 ** Install 
 
-*** [[http://marmalade-repo.org/packages/proxy-mode][Marmalade]], [[http://melpa.milkbox.net/#/proxy-mode][MELPA]]
+*** [[http://marmalade-repo.org/packages/proxy-mode][Marmalade]]
 
        #+BEGIN_SRC emacs-lisp
          M-x package-install RET proxy-mode RET 
