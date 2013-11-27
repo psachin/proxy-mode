@@ -78,7 +78,7 @@ Host    : 127.0.0.1"
 ;;;###autoload
 (define-minor-mode proxy-mode
   "Minor proxy-mode."
-  :lighter nil ;; " ρ"
+  :lighter " ρ"
   :global t
   :group 'proxy
   (if (not proxy-mode)

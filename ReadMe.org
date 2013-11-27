@@ -1,5 +1,4 @@
-* proxy-mode
-
+* proxy-mode  [[https://travis-ci.org/psachin/proxy-mode.png?branch=master][https://travis-ci.org/psachin/proxy-mode.png?branch=master]]
   Provides proxy mode for Emacs.
 
 ** Clone
@@ -74,7 +73,7 @@
 
       #+CAPTION: Proxy Services
       #+NAME:   proxy-services
-      [[https://github.com/psachin/proxy-mode/blob/master/images/proxy-services.png][Proxy Services]]
+      [[./images/proxy-services.png]]
 
 ** License
 
